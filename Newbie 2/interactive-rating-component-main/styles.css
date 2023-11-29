@@ -108,3 +108,29 @@ body{
     max-width: 150px;
     width: 100%;
 }
+
+@media (max-width:430px){
+    .container{
+        margin: 20px;
+    }
+    .rating{
+        max-width: fit-content;
+        height: fit-content;
+        font-size: .9rem;
+    }
+    .rating p{
+        margin: 30px;
+    }
+    .rating button{
+        margin-top: 40px;
+    }
+    .btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #btn{
+        margin: 12px;
+        max-width: 50px;
+    }
+}
