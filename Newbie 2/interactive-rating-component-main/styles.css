@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&family=Nunito+Sans:opsz,wght@6..12,300&family=Overpass&family=Poppins&display=swap');
+*{
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: hsl(216, 12%, 8%);
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rating{
+    color: hsl(0, 0%, 100%);
+    background: hsl(213, 19%, 18%);
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+}
+.icon img{
+    box-shadow: -2px 4px 28px 1px rgba(0,0,0,1);
+    border-radius:50%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+}
+.heading{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.feedback{
+    color: hsl(217, 12%, 63%);
+}
+#btn{
+    box-shadow: -2px 4px 28px 1px rgba(0,0,0,1);
+    background: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    width: 50px;
+    margin-right: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    border: none;
+    border-radius:50%;
+}
+#btn:hover{
+    background: linear-gradient(hsl(25, 97%, 53%),hsl(216, 12%, 8%));
+}
+#btn:focus{
+    background: linear-gradient(hsl(25, 97%, 53%),hsl(216, 12%, 8%));
+}
+.button{
+    color: white;
+    max-width: 370px;
+    width: 100%;
+    background: hsl(25, 97%, 53%);
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius:20px;
+    font-weight: 400;
+}
+.button:hover{
+    background: linear-gradient(hsl(25, 97%, 53%),hsl(216, 12%, 8%));
+}
+.wrapper{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thank-you{
+    max-width: 400px;
+    width: 100%;
+    background: hsl(213, 19%, 18%);
+    text-align: center;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+.hidden{
+    display: none;
+}
+.selected{
+    box-shadow: -2px 4px 28px 1px rgba(0,0,0,1);
+    background: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.thanks{
+    font-size:1.8rem ;
+    margin: 10px;
+}
+.paragraph{
+    color: hsl(217, 12%, 63%);
+    font-size:.8rem ;
+    margin: 10px;
+}
+#rate-again{
+    max-width: 150px;
+    width: 100%;
+}
