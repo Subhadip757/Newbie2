@@ -14,7 +14,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.rating{
+.main{
     color: hsl(0, 0%, 100%);
     background: hsl(213, 19%, 18%);
     max-width: 400px;
@@ -113,15 +113,15 @@ body{
     .container{
         margin: 20px;
     }
-    .rating{
+    .main{
         max-width: fit-content;
         height: fit-content;
         font-size: .9rem;
     }
-    .rating p{
+    .main p{
         margin: 30px;
     }
-    .rating button{
+    .main button{
         margin-top: 40px;
     }
     .btn{
