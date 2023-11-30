@@ -1,4 +1,4 @@
-const container = document.querySelector('.container');
+const main = document.querySelector('.main');
 const thankYou = document.querySelector('.thank-you');
 const submitButton = document.querySelector('.button');
 const rateAgain = document.querySelector('#rate-again')
@@ -7,12 +7,12 @@ const selectedStar = document.querySelector('#selectedStar')
 
 submitButton.addEventListener("click", () => {
     thankYou.classList.remove("hidden");
-    container.style.display = 'none';
+    main.style.display = 'none';
 })
 
 rateAgain.addEventListener('click',()=>{
     thankYou.classList.add('hidden');
-    container.style.display = 'block';
+    main.style.display = 'block';
 })
 
 rates.forEach((rate) => {
