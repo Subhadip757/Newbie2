@@ -1,0 +1,74 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 98vh; /* 100% of the viewport height */
+    background: hsl(275, 100%, 97%);
+}
+
+.half {
+    flex: 1; /* Each half takes up 50% of the available space */
+    height: 48.5%;
+    z-index: 1;
+}
+.container{
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    max-height: 90vh;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    /* border: 1px solid violet; */
+    border-radius: 10px;
+    z-index: 2;
+}
+.project{
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background: hsl(0, 0%, 100%);
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 2;
+}
+.container h1{
+    display: flex;
+    align-items: center;
+}
+.container h4{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.container p{
+    font-size: 10px;
+}
+.first-hidden{
+    display: none;
+}
+.second-hidden{
+    display: none;
+}
+.third-hidden{
+    display: none;
+}
+.fourth-hidden{
+    display: none;
+}
+button{
+    background: transparent;
+    border: none;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
