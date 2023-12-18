@@ -1,7 +1,9 @@
+@import url("/faq-accordion-main/assets/fonts/WorkSans-VariableFont_wght.ttf");
 *{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: Worksans-Variable;
 }
 body{
     display: flex;
@@ -10,11 +12,14 @@ body{
     justify-content: center;
 }
 .container{
+    width: 100%;
+    height: 97vh;
     background-color: hsl(275, 100%, 97%);
 }
 .attribution {
+    width: 100%;
     font-size: 11px; 
-    text-align: center;
+    text-align:center;
     background: hsl(275, 100%, 97%); 
 }
 .attribution a {
@@ -25,8 +30,125 @@ body{
 }
 .content{
     position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid black;
     width: 100%;
     height: 100%;
     z-index: 2;
+}
+.faqs{
+    padding: 15px;
+    max-width: 500px;
+    max-height: 500px;
+    border: 1px solid black;
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 10px black;
+}
+.question1{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.question1 p{
+    font-size: 14px;
+}
+.question2{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.question2 p{
+    font-size: 14px;
+}
+.question3{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.question3 p{
+    font-size: 14px;
+}
+.question4{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.question4 p{
+    font-size: 14px;
+}
+.plusminus{
+    position:relative;
+    padding: 10px;
+}
+.minus{
+    position: relative;
+    display: none;
+    padding: 10px;
+}
+button{
+    background: transparent;
+    border: none;
+}
+.hidden1{
+    display: none;
+}
+#hidden1{
+    margin-top:10px;
+    margin-right: 60px;
+    font-size: 9px;
+}
+#hidden2{
+    margin-top:10px;
+    margin-right: 60px;
+    font-size: 9px;
+}
+#hidden3{
+    margin-top:10px;
+    margin-right: 60px;
+    font-size: 9px;
+}
+#hidden4{
+    margin-top:10px;
+    margin-right: 60px;
+    font-size: 9px;
+}
+.hidden2{
+    display: none;
+}
+.hidden3{
+    display: none;
+}
+.hidden4{
+    display: none;
+}
+
+@media (max-width:530px){
+    .faqs{
+        margin: 20px;
+    }
+    .question1 p{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .question2 p{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .question3 p{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .question4 p{
+        font-size: 10px;
+        font-weight: 600;
+    }
 }
