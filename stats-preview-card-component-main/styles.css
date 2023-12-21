@@ -82,17 +82,17 @@ body{
     color: hsla(0, 0%, 100%, 0.75);
 }
 .image img{
-    display: block;
     max-width: 425px;
-    max-height: 425px;
     opacity: 0.4;
 }
 .image{
-    max-width: 425px;
-    max-height: 425px;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: 0;
+    padding: 0;
     background-color: hsl(277, 64%, 61%);
 }
-@media (max-width:376px){
+@media (max-width:426px){
     .container{
         display: flex;
         align-items: center;
@@ -125,7 +125,7 @@ body{
     }
     .image img{
         max-width:290px;
-        border-radius: 20px 20px 20px 20px;
+        border-radius: 20px 20px 0 0;
     }
     .numbers{
         display: flex;
