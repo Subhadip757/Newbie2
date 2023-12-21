@@ -5,6 +5,9 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
+body{
+    background:hsl(233, 47%, 7%) ;
+}
 .container {
     width: 100%;
     height: 100vh;
@@ -12,7 +15,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background:hsl(233, 47%, 7%) ;
 }
 .insights{
     display: flex;
@@ -50,7 +52,8 @@
     margin-top: 10px;
 }
 .companies{
-    max-width: 100px;
+    display: flex;
+    flex-direction: column;
 }
 .companies span{
     font-family: 'Lexend Deca', sans-serif;
@@ -59,7 +62,8 @@
     color: hsla(0, 0%, 100%, 0.75);
 }
 .templates{
-    max-width: 100px;
+    display: flex;
+    flex-direction: column;
 }
 .templates span{
     font-family: 'Lexend Deca', sans-serif;
@@ -68,7 +72,8 @@
     color: hsla(0, 0%, 100%, 0.75);
 }
 .queries{
-    max-width: 100px;
+    display: flex;
+    flex-direction: column;
 }
 .queries span{
     font-family: 'Lexend Deca', sans-serif;
@@ -83,13 +88,70 @@
     opacity: 0.4;
 }
 .image{
-    max-width: 450px;
-    max-height: 450px;
+    max-width: 425px;
+    max-height: 425px;
     background-color: hsl(277, 64%, 61%);
 }
-@media (max-width:375px){
+@media (max-width:376px){
     .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        height: 100vh;
+        height: 100%;
+    }
+    .insights{
+        margin:20px auto;
+        border-radius: 20px;
+        display: flex;
+        flex-direction:column-reverse;
+        border: none;
+        outline: none;
+    }
+    .texts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 250px;
+        border-radius:0 0 20px 20px;
+        padding: 20px;
+    }
+    .texts p{
+        font-size: 15px;
+    }
+    .image{
+        max-width: fit-content;
+        border-radius: 20px 20px 0 0px;
+    }
+    .image img{
+        max-width:290px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .numbers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .queries{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .templates{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .companies{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .texts .head{
+        font-size: 25px;
+        text-align: center;
+    }
+    .texts .paragraph{
+        text-align: center;
     }
 }
