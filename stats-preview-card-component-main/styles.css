@@ -82,8 +82,10 @@ body{
     color: hsla(0, 0%, 100%, 0.75);
 }
 .image img{
+    mix-blend-mode: multiply;
+    opacity: 0.8;
     max-width: 425px;
-    opacity: 0.4;
+    /* opacity: 0.4; */
 }
 .image{
     max-width: fit-content;
@@ -124,6 +126,8 @@ body{
         border-radius: 20px 20px 0 0px;
     }
     .image img{
+        mix-blend-mode: multiply;
+        opacity: 0.8;
         max-width:290px;
         border-radius: 20px 20px 0 0;
     }
